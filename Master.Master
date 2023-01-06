@@ -79,6 +79,12 @@
             </asp:ContentPlaceHolder>
         </div>
         <%--ContentPlaceHolder1--%>
+
+        <%--footer--%>
+        <footer class="text-center">
+            <p>&copy <%: DateTime.Now.Year %> - Bütün Hakları Saklıdır.</p>
+        </footer>
+        <%--footer--%>
     </form>
 </body>
 </html>
