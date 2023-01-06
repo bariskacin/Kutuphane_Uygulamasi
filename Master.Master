@@ -74,15 +74,49 @@
 </nav>
         </div>
         <%--ContentPlaceHolder1--%>
-        <div>
+        <div class="me-auto">
             <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
             </asp:ContentPlaceHolder>
         </div>
         <%--ContentPlaceHolder1--%>
 
         <%--footer--%>
-        <footer class="text-center">
-            <p>&copy <%: DateTime.Now.Year %> - Bütün Hakları Saklıdır.</p>
+        <footer class="card">
+            <div class="card-header">
+            <ul class="nav justify-content-center"> <%--footer comment--%>
+                <%--Links--%>
+                <li class="ms-3 text-center">
+                        <asp:LinkButton ID="LinkButton5" class="footerlinks" runat="server">Yönetici Giriş</asp:LinkButton>
+                    </li>
+
+                    <li class="ms-3 text-center">
+                        <asp:LinkButton ID="LinkButton6" class="footerlinks" runat="server">Yayıncı Girişi</asp:LinkButton>
+                    </li>
+
+                    <li class="ms-3 text-center">
+                        <asp:LinkButton ID="LinkButton7" class="footerlinks" runat="server">Yazar Girişi</asp:LinkButton>
+                    </li>
+
+                     <li class="ms-3 text-center">
+                        <asp:LinkButton ID="LinkButton8" class="footerlinks" runat="server">Üye Girişi</asp:LinkButton>
+                    </li>
+                <%--Links--%>
+            </ul>
+          </div>
+          <div class="card-body">
+
+            <div class="position-relative">
+                <div class="container p-0">
+                    <ul class="nav justify-content-center">
+                        
+                    <p>&copy; <%: DateTime.Now.Year %> - Bütün Hakları Saklıdır.</p>
+
+                           
+                    </ul>   
+                                
+                </div>            
+            </div>  
+          </div>
         </footer>
         <%--footer--%>
     </form>
